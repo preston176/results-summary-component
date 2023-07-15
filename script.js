@@ -1,28 +1,49 @@
-const rWrapper = document.getElementById('rWrapper');
+const apiEndpoint = "http://localhost:3000/categories"
+const display = document.querySelector("#rWrapper");
+let avg = document.querySelector('#avg');
 
-fetch('http://localhost:3000/categories')
-  .then(response => response.json())
-  .then(data => {
-    const jsonData = data.categories;
-    jsonData.forEach(item => {
-      const categoryDiv = document.querySelector(`.${item.category}`);
+const getData = async () => {
+  const res = await fetch (apiEndpoint);
+  const data = await res.json()
 
-      if (categoryDiv) {
-        const scoreSpan = categoryDiv.querySelector('.r-c span');
-        const iconImg = categoryDiv.querySelector('.l-c img');
+  console.log(data);
+  return data
+}
 
-        if (scoreSpan) {
-          scoreSpan.textContent = item.score;
-        }
+const displayData = async () => {
+  const payload = await getData();
 
-        if (iconImg) {
-          iconImg.src = item.icon;
-          iconImg.alt = item.category;
-        }
-      }
-    });
-  })
+  let dataDisplay = payload.map((object) => {
+    const { category, score, icon } = object;
+    const averageScore = calculateAverage([score]); // Pass the score as an array [score]
+    console.log("Average score:", averageScore);
+    avg.textContent = averageScore.toFixed(0);
+    // console.log(score);
+    return `<div class="${category}">
+      <div class="l-c">
+        <span><img src=${icon} alt="icon" /></span>
+        <span>${category}</span>
+      </div>
+      <div class="r-c"><span>${score}</span> / 100</div>
+    </div>`;
+  }).join('');
 
-  .catch(error => {
-    console.error('Error:', error);
-  });
+  display.innerHTML = dataDisplay;
+};
+
+/* The `displayData()` function is responsible for fetching data from the API endpoint, processing the
+data, and displaying it on the webpage. */
+displayData();
+
+// avg scores
+const calculateAverage = (scores) => {
+  if (!Array.isArray(scores) || scores.length === 0) {
+    return 0; // Return 0 if the input is not an array or if the array is empty
+  }
+
+/* The code is calculating the average of an array of scores. */
+  const sum = scores.reduce((total, score) => total + score, 0);
+  const average = sum / scores.length;
+  return average;
+};
+
