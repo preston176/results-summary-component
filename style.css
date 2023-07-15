@@ -15,14 +15,14 @@ body {
   /* border: 1px solid black; */
   border-radius: 1.8rem;
   outline: none;
-  height: 50vh;
+  height: 55vh;
   box-shadow: 15px 9px 39px 1px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 15px 9px 39px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 15px 9px 39px 1px rgba(0, 0, 0, 0.2);
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 16px;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -96,7 +96,7 @@ body {
 
 .r-container button {
   border-radius: 1.2rem;
-  margin-top: 2.5vh;
+  margin-top: 6vh;
   height: 5vh;
   outline: none;
   border: none;
