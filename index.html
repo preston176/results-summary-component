@@ -11,7 +11,7 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Frontend Mentor | Results summary component</title>
   </head>
   <body>
@@ -19,8 +19,10 @@
       <div class="l-container">
         <h2>Your Result</h2>
         <div class="circle">
-          <span class="count">76</span>
-          <div class="circle--total">of 100</div>
+          <div class="circle--text">
+            <span class="count">76</span>
+            <div class="circle--total">of 100</div>
+          </div>
         </div>
         <h2>Great</h2>
         <p>
@@ -29,7 +31,7 @@
       </div>
       <div class="r-container">
         <h2>Summary</h2>
-        <div class="r-wrapper">
+        <div class="r-wrapper" id="rWrapper">
           <div class="Reaction">
             <div class="l-c">
               <span
@@ -93,5 +95,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Preston M</a>.
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>

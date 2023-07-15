@@ -12,9 +12,13 @@ body {
   width: fit-content;
   padding: 0;
   margin: auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 1.8rem;
+  outline: none;
   height: 50vh;
+  box-shadow: 15px 9px 39px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 15px 9px 39px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 15px 9px 39px 1px rgba(0, 0, 0, 0.2);
 }
 
 .attribution {
@@ -45,11 +49,13 @@ body {
 .l-container h2 {
   color: hsl(0, 0%, 100%);
 }
-
+.circle--text {
+  padding: 20px;
+}
 .circle {
-  border-radius: 35px;
-  width: 70px;
-  height: 70px;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
   margin: auto;
   color: hsl(0, 0%, 100%);
   background-image: linear-gradient(
@@ -61,6 +67,8 @@ body {
 .circle span {
   color: hsl(0, 0%, 100%);
   font-size: 36px;
+  text-align: center;
+  justify-content: center;
 }
 
 .circle--total {
