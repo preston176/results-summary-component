@@ -1,0 +1,151 @@
+body {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  padding: 0;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 1.8rem;
+  height: 50vh;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.r-container {
+  display: flex;
+  flex-direction: column;
+  /* min-width: fit-content; */
+  margin: 0 20px 0 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.l-container {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  text-align: center;
+  padding: 12px;
+  border-radius: 1.8rem;
+}
+
+.l-container h2 {
+  color: hsl(0, 0%, 100%);
+}
+
+.circle {
+  border-radius: 35px;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  color: hsl(0, 0%, 100%);
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+}
+
+.circle span {
+  color: hsl(0, 0%, 100%);
+  font-size: 36px;
+}
+
+.circle--total {
+  display: block;
+  color: hsl(0, 0%, 90%);
+}
+
+.l-container p {
+  color: hsl(0, 0%, 100%);
+}
+
+.r-wrapper div {
+  margin: 9px 2px 9px 2px;
+  /* trbl*/
+}
+
+.r-wrapper img {
+  align-items: center;
+}
+
+.r-container button {
+  border-radius: 1.2rem;
+  margin-top: 2.5vh;
+  height: 5vh;
+  outline: none;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  background: hsl(224, 30%, 27%);
+}
+
+.r-container button:hover {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  cursor: pointer;
+}
+
+.Reaction {
+  display: flex;
+  justify-content: space-between;
+  background: #fff6f5;
+  font-weight: 500;
+  color: hsl(0, 100%, 67%);
+  align-items: center;
+}
+
+.Memory {
+  display: flex;
+  justify-content: space-between;
+  background: #fffcef;
+  font-weight: 500;
+  color: hsl(39, 100%, 56%);
+  align-items: center;
+}
+
+.Verbal {
+  display: flex;
+  justify-content: space-between;
+  background: #fff8f5;
+  color: hsl(166, 100%, 37%);
+  font-weight: 500;
+  align-items: center;
+}
+
+.Visual {
+  display: flex;
+  justify-content: space-between;
+  background: #fff6ff;
+  color: hsl(234, 85%, 45%);
+  align-items: center;
+}
+
+.r-c {
+  color: hsl(224, 30%, 27%);
+}
+
+.r-c span {
+  color: #000;
+  font-weight: 700;
+}
+
+@keyframes countUp {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.count {
+  animation: countUp 0.15s ease-in-out;
+}
