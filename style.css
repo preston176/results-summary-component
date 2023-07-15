@@ -23,6 +23,11 @@ body {
 
 .attribution {
   font-size: 11px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: hsl(0, 0%, 100%);
   text-align: center;
 }
 
@@ -159,5 +164,22 @@ body {
 }
 
 .count {
-  animation: countUp 0.15s ease-in-out;
+  animation: countUp 0.1s ease-in-out;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .container {
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  .r-container {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
 }
