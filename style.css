@@ -171,6 +171,9 @@ body {
   .container {
     flex-wrap: wrap;
   }
+  .r-container {
+    height: 60vh;
+  }
   body {
     max-height: 400px;
   }
