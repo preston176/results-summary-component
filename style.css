@@ -171,6 +171,8 @@ body {
   .container {
     flex-wrap: wrap;
   }
+  body {
+max-height: 400px;
 }
 
 @media only screen and (max-width: 460px) {
@@ -182,4 +184,7 @@ body {
     margin-top: 50px;
     margin-bottom: 20px;
   }
+  body {
+max-height: 400px;
+}
 }
