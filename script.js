@@ -1,4 +1,6 @@
 const apiEndpoint = "https://my-json-server.typicode.com/preston176/results-summary-component/categories"
+//change to the one below in case of local use
+// const apiEndpoint = "http://localhost:3000"
 const display = document.querySelector("#rWrapper");
 let avg = document.querySelector('#avg');
 
