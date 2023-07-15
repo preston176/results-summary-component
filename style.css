@@ -164,7 +164,7 @@ body {
 }
 
 .count {
-  animation: countUp 0.1s ease-in-out;
+  animation: countUp 1.25s ease-in-out;
 }
 
 @media only screen and (max-width: 375px) {
@@ -172,19 +172,20 @@ body {
     flex-wrap: wrap;
   }
   body {
-max-height: 400px;
-}
+    max-height: 400px;
+  }
 
-@media only screen and (max-width: 460px) {
-  .container {
-    flex-wrap: wrap;
-    height: fit-content;
+  @media only screen and (max-width: 460px) {
+    .container {
+      flex-wrap: wrap;
+      height: fit-content;
+    }
+    .r-container {
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+    body {
+      max-height: 400px;
+    }
   }
-  .r-container {
-    margin-top: 50px;
-    margin-bottom: 20px;
-  }
-  body {
-max-height: 400px;
-}
 }
