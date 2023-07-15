@@ -15,7 +15,7 @@ body {
   /* border: 1px solid black; */
   border-radius: 1.8rem;
   outline: none;
-  height: 55vh;
+  height: auto;
   box-shadow: 15px 9px 39px 1px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 15px 9px 39px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 15px 9px 39px 1px rgba(0, 0, 0, 0.2);
@@ -96,7 +96,8 @@ body {
 
 .r-container button {
   border-radius: 1.2rem;
-  margin-top: 6vh;
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
   height: 5vh;
   outline: none;
   border: none;
